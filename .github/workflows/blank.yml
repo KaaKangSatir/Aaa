@@ -17,9 +17,7 @@ jobs:
     - name: Download
 
       run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-       -uri "https://github.com/KaaKangSatir/Kaakangsatir.github.io/raw/main/Exagear.7z" -Outfile client.rar
-       -uri "https://www.mediafire.com/file/kwwdey3gfoy3ysi/fastman92_limit_adjuster_7_2.rar/file" -Outfile fla.rar
-       -uri "https://www.win-rar.com/fileadmin/winrar-versions/winrar-x64-700ar.exe" -Outfile winrar.exe
+
     - name: Extract
 
       run: Expand-Archive ngrok.zip
